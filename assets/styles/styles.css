@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: Quicksand, sans-serif;
     margin: 0;
@@ -46,6 +54,7 @@ footer {
 
 main {
     padding: 20px;
+    overflow: auto;
 }
 
 .card {
@@ -79,4 +88,15 @@ nav li a {
     font-weight: 400;
     text-decoration: none;
     color: white;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
 }
