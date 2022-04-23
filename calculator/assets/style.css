@@ -57,6 +57,11 @@ body {
     font-weight: bold;
 }
 
+#lastInput {
+    color: grey;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 513px) {
     .button {
         padding: 20px;
