@@ -96,6 +96,13 @@ function performCalculation(){
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
     }
 
+    putHistory({
+        firstNumber: calculator.firstNumber,
+        operator: calculator.operator,
+        secondNumber: calculator.displayNumber,
+        result: result
+    });
+
     calculator.operator = null;
     calculator.waitingForSecondNumber = false;
     calculator.displayNumber = result;
